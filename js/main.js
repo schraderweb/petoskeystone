@@ -12,6 +12,17 @@
     })
 
 
+
+    const closeBtn = document.querySelector(".close");
+    const modalX = document.querySelector(".modalx");
+    if(closeBtn != null && modalX != null) {
+        closeBtn.addEventListener("click", () => {
+            modalX.classList.toggle("hidden");
+            
+        })
+    }
+    
+
     
     // Spinner
     var spinner = function () {
