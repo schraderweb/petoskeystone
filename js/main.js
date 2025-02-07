@@ -1,6 +1,18 @@
 (function ($) {
     "use strict";
 
+
+
+    const dropBoxMenu = document.querySelector(".menu-drop");
+    const dropDownMenu = document.querySelector(".menu-drop-down");
+    dropBoxMenu.addEventListener("click", () => {
+        console.log("click");
+        dropDownMenu.classList.toggle("hidden");
+        
+    })
+
+
+    
     // Spinner
     var spinner = function () {
         setTimeout(function () {
@@ -120,21 +132,21 @@
 
 
 $(document).ready(function() {
-    document.querySelector('.close').addEventListener('click', ()=>{
-        document.querySelector(".modalx").classList.toggle("hidden");
-    })
 
+    
 	/* Apply fancybox to multiple items */
 	
-	// $("a.group").fancybox({
-	// 	'transitionIn'	:	'elastic',
-	// 	'transitionOut'	:	'elastic',
-	// 	'speedIn'		:	600, 
-	// 	'speedOut'		:	200, 
-	// 	'overlayShow'	:	false,
-    //     'showNavArrows' :   true
-	// });
+	$("a.group").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false,
+        'showNavArrows' :   true
+	});
 
+
+ 
 
    
 	
