@@ -17,7 +17,7 @@
     /* height: 300px; */
     text-align: center;
     display: flex
-;
+;   margin: auto;
     align-items: center;
     justify-content: center;
 
@@ -27,11 +27,14 @@
     height: 100%;
     
 }
+.lst {
+    list-style: circle;
+}
 .modalx{
     position: fixed;
     bottom: 10px;
     right: 10px;
-    background-color: #ffffffa3;
+    background-color: #ffffffe3;
     z-index: 90;
     max-width: 400px;
     max-height: 500px;
@@ -341,7 +344,8 @@ h6,
     right: 0;
     bottom: 0;
     display: flex;
-    align-items: center;
+    align-items: start;
+    padding-top: 150px;
     /* background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%); */
     background: linear-gradient(to right, rgb(0 0 0 / 55%) 100%, rgba(2, 36, 91, 0) 100%);
     z-index: 1;
@@ -399,8 +403,9 @@ h6,
 
 .video{
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
+    height: calc(100vh - 300px);
 }
 video{
     /* display: ab; */
@@ -1079,6 +1084,10 @@ ul {
     .mh-caro h1{
         font-size: 19px;
         margin-bottom: 10px !important;
+    }
+
+    .carousel-caption{
+        align-items: center;
     }
  
  }
