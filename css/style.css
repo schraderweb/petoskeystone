@@ -387,7 +387,8 @@ h6,
 }
 
 .page-header {
-    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/carousel-2.jpg) center center no-repeat;
+    /* background: linear-gradient(to right, rgb(80, 121, 186) 0%, rgba(135, 149, 171, 0) 100%), url(../img/IMG_1217.jpeg) center center no-repeat; */
+    background: linear-gradient(to right, rgb(51 51 51) 0%, rgba(135, 149, 171, 0) 34%), url(../img/IMG_1217.jpeg) center center no-repeat;
     background-size: cover;
 }
 
