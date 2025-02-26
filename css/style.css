@@ -1014,6 +1014,9 @@ ul {
 }
 
 @media (max-width: 575.98px) { 
+    .parag { 
+        flex-direction: column;
+    }
     #navbarNav{
         height: auto;
     }
