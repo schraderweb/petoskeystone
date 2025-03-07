@@ -347,7 +347,7 @@ h6,
     align-items: start;
     padding-top: 150px;
     /* background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%); */
-    background: linear-gradient(to right, rgb(0 0 0 / 55%) 100%, rgba(2, 36, 91, 0) 100%);
+    /* background: linear-gradient(to right, rgb(0 0 0 / 55%) 100%, rgba(2, 36, 91, 0) 100%); */
     z-index: 1;
 }
 
@@ -388,8 +388,9 @@ h6,
 
 .page-header {
     /* background: linear-gradient(to right, rgb(80, 121, 186) 0%, rgba(135, 149, 171, 0) 100%), url(../img/IMG_1217.jpeg) center center no-repeat; */
-    background: linear-gradient(to right, rgb(51 51 51) 0%, rgba(135, 149, 171, 0) 34%), url(../img/IMG_1217.jpeg) center center no-repeat;
+    background:  url(../img/IMG_1217.jpeg) center center no-repeat;
     background-size: cover;
+    /* linear-gradient(to right, rgb(51 51 51) 0%, rgba(135, 149, 171, 0) 34%), */
 }
 
 .page-header .breadcrumb-item+.breadcrumb-item::before {
@@ -1095,6 +1096,16 @@ ul {
     }
  
  }
+
+ #brands img{
+    width: 100%;
+    height: 100%;
+    
+  }
+  .gallery img {
+    max-height: 230px !important;
+    min-height: 230px !important;
+  }
  @media (max-width: 767.98px) { 
     .header-nav {
         /* position: relative !important; */
@@ -1107,14 +1118,20 @@ ul {
         color: #000;
         width: 100%;
     }
+
+    .group img {
+        min-height: unset !important;
+    }
+    
+    .gallery img {
+        max-height: unset !important;
+        min-height: unset !important;
+    }
+  }
+  .testimonials {
+    background: url(/img/peek-a-boo.jpg);
+  }
+  .testimonials .container {
+    background-color: #ffffffcc;
   }
 
-  #brands img{
-    width: 100%;
-    height: 100%;
-    
-  }
-  .gallery img {
-    max-height: 230px !important;
-    min-height: 230px !important;
-  }
