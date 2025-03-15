@@ -1033,7 +1033,7 @@ ul {
         height: auto;
     }
     .modalx{
-        max-width: 95%;
+        /* max-width: 95%; */
     }
     #navbarNav li::after {
         
