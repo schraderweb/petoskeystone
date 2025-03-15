@@ -1125,9 +1125,17 @@ ul {
         display: flex;
         align-items: flex-start;
     }
+    #header-carousel .carousel-item {
+        position: relative;
+        min-height: 350px;
+    }
     .navbar .navbar-nav .nav-link {
         color: #000;
         width: 100%;
+        font-size: 20px;
+    }
+    .navbar-nav .nav-link.active {
+        color: red !important;
     }
 
     .group img {
