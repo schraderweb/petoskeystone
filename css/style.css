@@ -1035,6 +1035,9 @@ ul {
     .modalx{
         /* max-width: 95%; */
     }
+    .footer {
+        padding: 2rem 0 0rem;
+    }
     #navbarNav li::after {
         
         background-color: transparent;
