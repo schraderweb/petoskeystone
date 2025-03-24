@@ -1196,7 +1196,8 @@ ul {
     .modified__for__mobile .review-us-logos img.review-badges {
         width: 100%;
     }
-    .dealer__page{
+    .dealer__page,
+    .dealer__page__html{
         overflow-x: hidden;
     }
 }
