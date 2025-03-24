@@ -1046,10 +1046,9 @@ ul {
         border-top: none;
     }
     .review-us-logos {
-        display: flex
-;
-    justify-content: center;
-    gap: 5px;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
     }
     .carousel-caption {
         padding-top: 100px;
@@ -1157,3 +1156,40 @@ ul {
     background-color: #ffffffcc;
   }
 
+/* Style updates for mobile by Amr */
+
+@media (max-width: 575.98px) { 
+    .header-nav {
+        z-index: 1000;
+        display: flex;
+        align-items: flex-start;
+    }
+    .header-nav .container-fluid {
+        margin: 0;
+        padding: 0;
+    }
+    .header-nav .container-fluid .row {
+        margin: 0;
+        padding: 0;
+    }
+    .navbar__brand__updated{
+        position: relative;
+    }
+    .header-nav .navbar__brand__updated{
+        margin-right: 0.5rem;
+        font-size: 1.25rem;
+        white-space: nowrap;
+    }
+    .navbar .navbar-nav .nav-link {
+        color: #000;
+    }
+    .modified__for__mobile .review-us-logos {
+        display: flex;
+    }
+    .modified__for__mobile .review-us-logos a{
+        text-decoration: none;
+    }
+    .modified__for__mobile .review-us-logos img.review-badges {
+        width: 100%;
+    }
+}
