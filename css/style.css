@@ -1172,6 +1172,10 @@ ul {
         margin: 0;
         padding: 0;
     }
+    .header-nav .navbar-toggler:focus,
+    .header-nav .navbar-toggler:focus-visible{
+        outline: 0;
+    }
     .navbar__brand__updated{
         position: relative;
     }
@@ -1191,5 +1195,8 @@ ul {
     }
     .modified__for__mobile .review-us-logos img.review-badges {
         width: 100%;
+    }
+    .dealer__page{
+        overflow-x: hidden;
     }
 }
