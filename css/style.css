@@ -137,6 +137,9 @@ button.close {
     background-color: rgb(76, 71, 71);
 
  }
+ .navbar-nav .nav-link.active {
+    color: red !important;
+}
  #navbarNav .last-child::after{
     background-color: transparent;
 
@@ -317,7 +320,9 @@ h6,
 .navbar .navbar-nav .nav-link.active {
     color: var(--primary);
 }
-
+.navbar .navbar-nav .nav-link:hover {
+    color: #d99b2b !important;
+}
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
