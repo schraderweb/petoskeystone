@@ -3,13 +3,13 @@
 
 
 
-    const dropBoxMenu = document.querySelector(".menu-drop");
-    const dropDownMenu = document.querySelector(".menu-drop-down");
-    dropBoxMenu.addEventListener("click", () => {
-        console.log("click");
-        dropDownMenu.classList.toggle("hidden");
+    // const dropBoxMenu = document.querySelector(".menu-drop");
+    // const dropDownMenu = document.querySelector(".menu-drop-down");
+    // dropBoxMenu.addEventListener("click", () => {
+    //     console.log("click");
+    //     dropDownMenu.classList.toggle("hidden");
         
-    })
+    // })
 
 
 
