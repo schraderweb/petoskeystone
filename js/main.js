@@ -17,7 +17,7 @@
         el.addEventListener("click", (e) => {
             console.log("eelelelel");
             e.preventDefault();
-            el.parentNode.scrollIntoView();
+            document.getElementById("wrapper").scrollIntoView();
         })
     });
     
