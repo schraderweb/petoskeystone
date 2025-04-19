@@ -12,6 +12,17 @@
     // })
 
 
+    document.querySelectorAll(".go-up").forEach((el) =>{
+       
+        el.addEventListener("click", (e) => {
+            console.log("eelelelel");
+            e.preventDefault();
+            el.parentNode.scrollIntoView();
+        })
+    });
+    
+
+
 
     const closeBtn = document.querySelector(".close");
     const modalX = document.querySelector(".modalx");
