@@ -1000,6 +1000,13 @@ ul {
 .footer-logo {
     padding-bottom: 10px;
 }
+.footer-logo a img {
+    background: #f1f1f1;
+    /* box-shadow: 0 4px 8px 0 rgb(255 255 255 / 20%), 0 6px 20px 0 rgb(160 160 160 / 19%); */
+    border-radius: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
 .footer-social li a {
     display: block;
     text-align: center;
