@@ -304,8 +304,31 @@ h6,
     background-color: var(--primary);
 } */
 
+
+.cats figure{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 .cats h6 {
-    pointer-events: none;
+    pointer-events:none;
+    font-size: 15px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+}
+
+.cats a {
+    z-index: 999;
+    height: 50px;
+    /* background: red; */
+    position: absolute;
+    width: 100%;
 }
 .navbar .navbar-nav .nav-link {
     /* margin-right: 35px; */
