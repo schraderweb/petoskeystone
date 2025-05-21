@@ -1148,9 +1148,34 @@ ul {
     .carousel-caption {
         padding-top: 0px;
     }
-    .nvmenu .show {
-        background: #fff;
+    /* .nvmenu .show {
+        background: #ffffff8f;
     padding: 11px;
+    } */
+    .navbar-collapse {
+
+    background: #ffffff8f;
+    padding: 11px;
+    }
+    .testimonial-img {
+        display: none;
+    }
+    .testimonial-carousel .owl-nav{
+        display: none;
+    }
+    .testimonials h1{
+        margin-bottom: 1rem !important;
+    }
+    .testimonials p {
+        font-size: 16px !important;
+    }
+    .testimonial-text h5 {
+               font-size: 15px !important;
+        font-weight: 100 !important;
+        font-family: auto;
+    }
+    .btn-all-rv{
+        font-size: 15px !important;
     }
     .mh-caro p{
         font-size: 19px;

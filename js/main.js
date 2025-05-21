@@ -134,7 +134,8 @@
         center: true,
         dots: false,
         loop: true,
-        nav : true,
+        nav : false,
+        autoHeight:true,
         navText : [
             '<i class="bi bi-arrow-left"></i>',
             '<i class="bi bi-arrow-right"></i>'
