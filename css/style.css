@@ -1083,6 +1083,17 @@ ul {
 }
 
 @media (max-width: 575.98px) { 
+    .modalx
+        {
+            position: fixed;
+            top: 140px;
+            right: 10px;
+            background-color: #ffffffe3;
+            z-index: 90;
+            max-width: 400px;
+            max-height: 700px;
+            overflow: scroll;
+        }
     .parag { 
         flex-direction: column;
     }
@@ -1207,6 +1218,7 @@ ul {
         justify-content: center;
         align-items: center;
         font-size: 35px;
+        top: 145px;
     }
  
  }
