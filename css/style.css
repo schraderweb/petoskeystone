@@ -1086,7 +1086,7 @@ ul {
     .modalx
         {
             position: fixed;
-            top: 140px;
+            top: 76px;
             right: 10px;
             background-color: #ffffffe3;
             z-index: 90;
@@ -1218,7 +1218,7 @@ ul {
         justify-content: center;
         align-items: center;
         font-size: 35px;
-        top: 145px;
+        top: 82px;
     }
  
  }
