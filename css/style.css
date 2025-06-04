@@ -1220,6 +1220,10 @@ ul {
         font-size: 35px;
         top: 82px;
     }
+    .menu-drop-down{
+        width: 100%;
+        left: 0;
+    }
  
  }
 
