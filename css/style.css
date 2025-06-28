@@ -1101,7 +1101,10 @@ ul {
     display: flex;
     justify-content: space-between;
 }
-
+.modal-head p {
+        width: 50%;
+        max-width: 150px;
+    }
 @media (max-width: 575.98px) { 
     .footer-menu-list {
     gap: 10px;
