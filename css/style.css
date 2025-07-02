@@ -976,7 +976,7 @@ a {
     transform: translateX(-50%);
 }
 ul {
-    list-style: none;
+    list-style: disc;
 }
 
 .testimonial-carousel .owl-item .testimonial-text {
