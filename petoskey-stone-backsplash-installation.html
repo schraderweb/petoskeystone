@@ -45,9 +45,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+        <style>
+        .swiper {
+      max-width: 920px;
+    /* background: red; */
+}
+    </style>
 </head>
 
 
@@ -219,10 +225,22 @@ decorative uses including stunning countertops.
   
 
   <h2>Gallery</h2>
-  <img style="width: 300px;" src="/img/pstam/Backsplashes/JPEG/Backsplash09.jpg" alt="Petoskey stone backsplash closeup">
-  <img style="width: 300px;" src="/img/pstam/Backsplashes/JPEG/Backsplash03.jpg"" alt="Kitchen backsplash using Petoskey stone">
-  <img style="width: 300px;" src="/img/pstam/Backsplashes/JPEG/Backsplash15.jpg"" alt="Petoskey stone detail in backsplash">
-
+   <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img style="width: 300px;"
+                                    src="/img/pstam/backlit tiles/JPEG/backlit_tile01.jpg"
+                                    alt="Petoskey stone backlit tile glowing"></div>
+                            <div class="swiper-slide"><img style="width: 300px;"
+                                    src="/img/pstam/backlit tiles/JPEG/backlit_tile02.jpg"
+                                    alt="Backlit Petoskey stone panel installation"></div>
+                            <div class="swiper-slide"><img style="width: 300px;"
+                                    src="/img/pstam/backlit tiles/JPEG/backlit_tile04.jpg"
+                                    alt="Close-up of lit Petoskey stone tile"></div>
+                        </div>
+                    </div>
 
 <br />
                     
@@ -503,6 +521,40 @@ your options, get a quote, or schedule a consultation!
     <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
     <!-- <script src="lib/counterup/counterup.min.js"></script> -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            //   direction: 'vertical',
+            loop: true,
+            autoplay: true,
+            followFinger: true,
+            // Default parameters
+            slidesPerView: 1,
+            spaceBetween: 10,
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                slidesPerView: 3,
+                spaceBetween: 10
+                },
+                // when window width is >= 640px
+                640: {
+                slidesPerView: 3,
+                spaceBetween: 10
+                }
+            }
+           
+        });
+    </script>
     <script src="js/main.js"></script>
 
 

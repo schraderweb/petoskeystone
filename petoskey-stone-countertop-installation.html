@@ -45,9 +45,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+        <style>
+        .swiper {
+      max-width: 920px;
+    /* background: red; */
+}
+    </style>
 </head>
 
 
@@ -202,9 +208,21 @@ Hexagonaria percarinata a colonial coral unique to this region.
   </p>
 
   <h2>Gallery</h2>
-  <img style="width: 300px;" src="/img/pstam/counter tops/JPEG/counter tops01.jpg" alt="Petoskey stone backlit tile glowing">
-  <img style="width: 300px;" src="/img/pstam/counter tops/JPEG/counter tops04.jpg" alt="Backlit Petoskey stone panel installation">
-  <img style="width: 300px;" src="/img/pstam/counter tops/JPEG/counter tops06.jpg" alt="Close-up of lit Petoskey stone tile">
+<div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img style="width: 300px;"
+                                    src="/img/pstam/counter tops/JPEG/counter tops01.jpg"
+                                    alt="Petoskey stone backlit tile glowing"></div>
+                            <div class="swiper-slide"><img style="width: 300px;"
+                                    src="/img/pstam/counter tops/JPEG/counter tops04.jpg"
+                                    alt="Backlit Petoskey stone panel installation"></div>
+                            <div class="swiper-slide"><img style="width: 300px;"
+                                    src="/img/pstam/counter tops/JPEG/counter tops06.jpg"
+                                    alt="Close-up of lit Petoskey stone tile"></div>
+                        </div>
+                    </div>
 
 
 <br />
@@ -501,6 +519,40 @@ our team handles every step to ensure flawless results. Whether you’re updatin
     <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
     <!-- <script src="lib/counterup/counterup.min.js"></script> -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            //   direction: 'vertical',
+            loop: true,
+            autoplay: true,
+            followFinger: true,
+            // Default parameters
+            slidesPerView: 1,
+            spaceBetween: 10,
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                slidesPerView: 3,
+                spaceBetween: 10
+                },
+                // when window width is >= 640px
+                640: {
+                slidesPerView: 3,
+                spaceBetween: 10
+                }
+            }
+           
+        });
+    </script>
     <script src="js/main.js"></script>
 
 
