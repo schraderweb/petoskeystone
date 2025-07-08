@@ -1342,6 +1342,8 @@ ul {
     }
   }
   .testimonials {
+    background-attachment: fixed !important;
+    background-position: 50% 0px;
     background: url(/img/peek-a-boo.jpg);
   }
   .testimonials p {
