@@ -12,6 +12,17 @@
     --light: #F5F5F5;
     --dark: #02245B;
 }
+.bg-captcha{
+    padding: 10px;
+    background-color: #ebe4e4;
+}
+.error{
+    border: 3px solid #ee212c;
+    background-color: #ee212b6c;
+}
+.access{
+    border: 1px solid #01b148;
+}
 .veteran{
     width: 300px;
     /* height: 300px; */
