@@ -5,6 +5,7 @@
     let myCaptcha = new jCaptcha({
         el: '.jCaptcha',
         canvasClass: 'jCaptchaCanvas',
+        requiredValue: "",
         canvasStyle: {
             // required properties for captcha stylings:
             width: 100,
