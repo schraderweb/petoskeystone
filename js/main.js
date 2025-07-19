@@ -156,7 +156,10 @@
 
 $(document).ready(function() {
 
-    
+     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+     $("button.close").html('<span class="display-6">X</span>Tap to close');
+    }
 	/* Apply fancybox to multiple items */
 	
 	$("a.group").fancybox({
@@ -167,6 +170,8 @@ $(document).ready(function() {
 		'overlayShow'	:	false,
         'showNavArrows' :   true
 	});
+
+   
 
 
  

@@ -1215,6 +1215,7 @@ ul {
         margin: 0;
         padding: 0;
     }
+    
     .navbar .navbar-nav .nav-link {
         color: #000;
     }
@@ -1227,8 +1228,19 @@ ul {
     } */
     .navbar-collapse {
 
-    background: #ffffff8f;
+    background: #ffffffbd;
     padding: 11px;
+    }
+    .blog-swiper img{
+    width: 100% !important;
+    }
+    .testimonial-carousel {
+        min-height: 605px;
+
+        /* display: flex
+;
+    justify-content: center;
+    align-items: center; */
     }
     .testimonial-img {
         display: none;
@@ -1301,7 +1313,9 @@ ul {
         align-items: center;
         font-size: 17px;
         top: 82px;
+
     }
+   
     .modal-head p {
         width: 50%;
         max-width: 150px;
