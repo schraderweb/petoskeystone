@@ -36,11 +36,13 @@
                 contentType: false, // auto-detection
                 processData: false // no need to parse formData to string
             }).done(function () {
-                console.log(formData);
-                
-                alert('Your mail is sent!');
+                document.querySelector(".popax").classList.remove('hidden');
+                setTimeout(() => {
+                document.querySelector(".modalx").classList.add("hidden");
+                }, "2000");
             }).fail(function (error) {
                 alert('Oops... ' + JSON.stringify(error));
+                document.querySelector(".popax").classList.add('hidden');
             });
 
 
