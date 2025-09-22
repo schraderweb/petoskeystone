@@ -937,6 +937,9 @@
         </button>
         </div>
         <form class="form d-flex flex-column gap-4 p-2" id="contact-form">
+            <div id="allErrors" class="all-errors text-danger ps-2 pe-2 hidden" style="border: 1px solid #d74747;">
+Please fill the required fields
+                        </div>
             <div class="row">
                 <div class="col">
                     <label class="fw-bold pb-3" for="exampleInputEmail1">First Name *</label>
@@ -967,7 +970,7 @@
                   <input type="email" name="email" class="form-control" required placeholder="Email">
                 </div>
               </div>
-              <div class="row">
+              <div class="row planning">
                 <label class="fw-bold pb-3" for="exampleInputEmail1">When are you planning to acquire tile? *</label>
                 
                 <div class="form-check">
@@ -996,7 +999,7 @@
                   </div>
                   
               </div>
-              <div class="row">
+              <div class="row working">
                 <label class="fw-bold pb-3" for="exampleInputEmail1">Are you currently working with a Realtor, Architect, Designer, Tile Store, or someone else? *</label>
                 
                 <div class="form-check">

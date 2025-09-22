@@ -158,7 +158,7 @@
 
 
         <div class="container">
-             <h2 class="display-6 mb-md-4 mb-2">Please reach out to us to buy Petoskey Stone Tiles and More!</h2>
+             <h2 class="display-6 mb-md-4 mb-2" id="allErrors">Please reach out to us to buy Petoskey Stone Tiles and More!</h2>
                    <!-- <br>  -->
             <div class="row">
                 <!-- <p class="fw-medium text-uppercase text-primary mb-2">Dealers</p> -->
@@ -174,6 +174,9 @@
                 <div class="col-12 col-md-9 col-lg-9">
                     
                     <form class="d-flex flex-column gap-4 p-2" id="contact-form">
+                        <div  class="all-errors text-danger ps-2 pe-2 hidden" style="border: 1px solid #d74747;">
+Please fill the required fields
+                        </div>
                         <div class="row">
                             <div class="col">
                                 <label class="fw-bold md-pb-3 pb-1" for="exampleInputEmail1">First Name *</label>
@@ -204,7 +207,7 @@
                               <input type="email" name="email" class="form-control" required placeholder="Email">
                             </div>
                           </div>
-                          <div class="row">
+                          <div class="row planning">
                             <label class="fw-bold md-pb-3 pb-1" for="exampleInputEmail1">When are you planning to acquire tile? *</label>
                             
                             <div class="form-check">
@@ -233,7 +236,7 @@
                               </div>
                               
                           </div>
-                          <div class="row">
+                          <div class="row working">
                             <label class="fw-bold pb-3" for="exampleInputEmail1">Are you currently working with a Realtor, Architect, Designer, Tile Store, or someone else? *</label>
                             
                             <div class="form-check">
@@ -252,7 +255,7 @@
                               
                           </div>
                           <div class="row didfound">
-                            <label class="fw-bold pb-3" for="exampleInputEmail1">How did you find our website?</label>
+                            <label class="fw-bold pb-3" for="exampleInputEmail1">How did you find our website? *</label>
                             
                             <div class="form-check">
                                 <input class="form-check-input"  name="google" type="checkbox" value="Google Search" id="defaultCheck1">
@@ -308,7 +311,10 @@
                             </div>
                           <span>The above captcha is to validate you’re not a bot sending out spam. We are committed to keeping your data confidential. We do not sell, rent, or lease our contact data or lists to third parties.</span>
                         <button type="submit" class="btnSubmit btn btn-primary">Submit</button>
-                        <div class="popax"></div>
+                        <div class="popax position-relative p-0 bottom-0 d-flex flex-column justify-content-end align-items-center w-100 h-100 bg-white hidden ">
+                            <p class="text-center">Your mail is sent!</p>            
+                            <h2 class="pb-5">Thank You</h2>
+                        </div>
                         <div class="modalx"></div>
                       </form>
                 </div>

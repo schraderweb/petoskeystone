@@ -30,11 +30,12 @@
             formData.append('template_id', 'template_eiwqkcv');
             formData.append('user_id', '4VscKHMrzjzUpQA6A');
 
+
             $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
                 type: 'POST',
                 data: formData,
-                contentType: false, // auto-detection
-                processData: false // no need to parse formData to string
+                contentType: false, 
+                processData: false 
             }).done(function () {
                 document.querySelector(".popax").classList.remove('hidden');
                 setTimeout(() => {
@@ -71,6 +72,7 @@
    function formSubmit(e) {
         e.preventDefault();
         const checkboxes = document.querySelectorAll('.didfound input[type="checkbox"]');
+        
         let isChecked = false;
         for (let i = 0; i < checkboxes.length; i++) {
             if (checkboxes[i].checked) {
@@ -78,10 +80,28 @@
                 break;
             }
         }
+        let isWrokingChecked = false;
+        const workingcheckboxes = document.querySelectorAll('.working input[type="radio"]');
+        for (let i = 0; i < workingcheckboxes.length; i++) {
+            if (workingcheckboxes[i].checked) {
+                isWrokingChecked = true;
+                break;
+            }
+        }
+        let isPlanningChecked = false;
+        const planningcheckboxes = document.querySelectorAll('.planning input[type="radio"]');
+        for (let i = 0; i < planningcheckboxes.length; i++) {
+            if (planningcheckboxes[i].checked) {
+                isPlanningChecked = true;
+                break;
+            }
+        }
 
-        if (!isChecked) {
+        if (!isChecked || !isWrokingChecked || !isPlanningChecked) {
             
-            alert('Please select at least one option : How did you find our website?'); // Display an error message
+            // alert('Please select at least one option : How did you find our website?'); // Display an error message
+            document.getElementById('allErrors').scrollIntoView();
+            document.querySelector('.all-errors').classList.remove('hidden');
         }else{
             myCaptcha.validate();
         }
