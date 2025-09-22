@@ -70,8 +70,22 @@
     });
    function formSubmit(e) {
         e.preventDefault();
+        const checkboxes = document.querySelectorAll('.didfound input[type="checkbox"]');
+        let isChecked = false;
+        for (let i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].checked) {
+                isChecked = true;
+                break;
+            }
+        }
 
+        if (!isChecked) {
+            
+            alert('Please select at least one option : How did you find our website?'); // Display an error message
+        }else{
+            myCaptcha.validate();
+        }
         // myCaptcha validate
-        myCaptcha.validate();
+        
     };
     document.querySelector("form").addEventListener("submit", formSubmit);
