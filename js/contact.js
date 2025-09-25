@@ -1,4 +1,6 @@
     // import jCaptcha from 'jCaptcha';
+    const timex = document.getElementById('timex').value = new Date();
+    
     const maxNumberOfTries = 5;
     const jeeCap = document.querySelector(".jeeCap");
     const btnSubmit = document.querySelector(".btnSubmit");
