@@ -28,9 +28,9 @@
                     // $('#contact-form')
                 
             var formData = new FormData(document.getElementById("contact-form"));
-            formData.append('service_id', 'service_z2bftac');
-            formData.append('template_id', 'template_eiwqkcv');
-            formData.append('user_id', '4VscKHMrzjzUpQA6A');
+            formData.append('service_id', 'service_zm9rk9e');
+            formData.append('template_id', 'template_nm5phw1');
+            formData.append('user_id', 'OSAL3DsYX4Kg--W2W');
 
 
             $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
