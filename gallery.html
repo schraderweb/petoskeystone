@@ -3506,8 +3506,11 @@ clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" refe
                                 <p>Call/Text before stopping by</p>
                                 <p><strong class="text-white">Phone: </strong><a style="color: #ceced0;" href="tel:+15866048473">+1 586-604-8473</a></p>
                                 <p><strong class="text-white">Address: </strong> 3773 Marion Center Rd, Charlevoix, MI 49720, United States</p>
-                                <p><strong class="text-white">Email: </strong><a class="" style="color: #ceced0;"
-                                        href="mailto:petoskeystonetile@icloud.com">petoskeystonetile@icloud.com</a></p>
+
+
+                              <button onclick="revealEmail()">Show Email Address</button>
+<p id="email-container"></p>
+
                                 
                             </div>
                             <div class="footer-title">
@@ -3651,6 +3654,21 @@ clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" refe
   <script src="js/main.js"></script>
 
 
+<script>
+function revealEmail() {
+    var user = 'petoskeystonetile';
+    var domain = 'icloud.com';
+    var emailLink = 'mailto:' + user + '@' + domain;
+    var container = document.getElementById('email-container');
+
+    container.innerHTML = '<a href="' + emailLink + '">' + user + '@' + domain + '</a>';
+    // Optionally hide the button after revealing
+    event.target.style.display = 'none';
+}
+
+  </script>
+
+  
 </body>
 
 </html>
