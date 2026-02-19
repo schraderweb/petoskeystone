@@ -813,6 +813,11 @@
                                 <p><strong class="text-white">Address: </strong> 3773 Marion Center Rd, Charlevoix, MI 49720, United States</p>
                                 <p><strong class="text-white">Email: </strong><a class="" style="color: #ceced0;"
                                         href="mailto:petoskeystonetile@icloud.com">petoskeystonetile@icloud.com</a></p>
+
+
+<button onclick="revealEmail()">Show Email Address</button>
+<p id="email-container"></p>
+
                                 
                             </div>
                             <div class="footer-title">
@@ -1144,6 +1149,23 @@ Please fill the required fields
     <script src="lib/counterup/counterup.min.js"></script>
 
 
+
+
+ <script>
+function revealEmail() {
+    var user = 'contact';
+    var domain = 'mywebsite.com';
+    var emailLink = 'mailto:' + user + '@' + domain;
+    var container = document.getElementById('email-container');
+
+    container.innerHTML = '<a href="' + emailLink + '">' + user + '@' + domain + '</a>';
+    // Optionally hide the button after revealing
+    event.target.style.display = 'none';
+}
+
+  </script>
+
+    
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
